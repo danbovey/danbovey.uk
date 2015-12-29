@@ -1,0 +1,45 @@
+.btn {
+	display: inline-block;
+	position: relative;
+	padding: 10px 15px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	transition: background ease 0.5s, color ease 0.5s;
+
+	&:active {
+		top: 4px;
+	}
+
+	&.default {
+		border-color: #FFF;
+		color: #FFF;
+
+		&:hover {
+			border-color: $primary;
+			background: $primary;
+		}
+	}
+
+	&.primary {
+		border-color: $primary;
+		color: $primary;
+
+		&:hover {
+			border-color: #333;
+			background: #333;
+			color: #FFF;
+		}
+	}
+
+	&.light {
+		border-color: #FFF;
+		color: #FFF;
+
+		&:hover {
+			border-color: #333;
+			background: #333;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<main class="post">
+	<div class="container">
+		{% if page.codepen %}
+			<p data-height="{{ page.codepenHeight }}" data-theme-id="12992" data-slug-hash="{{ page.codepen }}" data-default-tab="result" data-user="danbovey" data-preview="true" class='codepen'>See the Pen <a href='http://codepen.io/danbovey/pen/{{ page.codepen }}/'>Animated City Map</a> by Dan Bovey (<a href='http://codepen.io/danbovey'>@danbovey</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+			<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+		{% elsif page.image %}
+			<img src="{{ page.image }}" alt="{{ page.title }}">
+		{% endif %}
+		<h1 class="title">{{ page.title }}</h1>
+		{% if page.subtitle %}
+			<h2 class="subtitle">{{ page.subtitle }}</h2>
+		{% endif %}
+		<p class="meta">Posted on {{ page.date | date: "%-d %B %Y" }}</time>{% if page.author %} by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+		<article>
+			{{ content }}
+		</article>
+	</div>
+</main>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>

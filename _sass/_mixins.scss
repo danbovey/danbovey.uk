@@ -1,0 +1,32 @@
+@mixin tablet {
+	@media (min-width: 540px) {
+		@content;
+	}
+}
+
+@mixin clearfix {
+	&:after {
+		display: table;
+		clear: both;
+		content: '';
+	}
+}
+
+@mixin container {
+	max-width: $grid-width;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@mixin row {
+	@include clearfix;
+	
+	width: 104%;
+	margin-left: (-$grid-gutter);
+}
+
+@mixin span($i) {
+	float: left;
+	width: ((100% / $grid-columns) * $i) - $grid-gutter;
+	margin: 0 0 0 $grid-gutter;
+}

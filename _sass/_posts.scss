@@ -1,0 +1,44 @@
+.posts {
+	@include row;
+
+	.item {
+		@include span(4);
+
+		margin-bottom: 24px;
+
+		h1 a {
+			font-size: 1.2em;
+			color: inherit;
+		}
+	}
+}
+
+main.post {
+	margin-bottom: 50px;
+
+	h1.title {
+		margin: 0.3em 0 0.2em;
+		font-size: 3em;
+	}
+	h2.subtitle {
+		color: $muted;
+	}
+	.meta {
+		margin-top: 0;
+		margin-bottom: 1em;
+		color: $muted;
+	}
+
+	.highlighter-rouge + h3 {
+		margin-top: 1em;
+	}
+	.codepen.inline {
+		margin-top: 20px;
+	}
+}
+
+main.blog {
+	.item:nth-child(3n+1) {
+		clear: left;
+	}
+}

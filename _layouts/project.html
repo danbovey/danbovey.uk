@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<main class="project">
+	<div class="container">
+		<article{% if page.liveurl or page.type or page.completed %} class="project-content"{% endif %}>
+			<h2 class="title">Project Details</h2>
+			<h1 class="title">{{ page.title }}</h1>
+			{% if page.skills %}
+			<p class="skills">{{ page.skills }}</p>
+			{% endif %}
+			<img src="{{ page.image }}" alt="{{ page.title }}" class="thumbnail">
+			{{ content }}
+			{% if page.liveurl %}
+			<div class="launch">
+				<a href="{{ page.liveurl }}" target="_blank" class="btn primary">Launch Site</a>
+			</div>
+			{% endif %}
+		</article>
+		<aside>
+			{% if page.liveurl %}
+				<h6>URL</h6>
+				<p><a href="{{ page.liveurl }}">{{ page.liveurl | replace: 'http://','' | replace: 'https://','' }}</a></p>
+			{% endif %}
+			{% if page.type %}
+				<h6>Type</h6>
+				<p>{{ page.type }}</p>
+			{% endif %}
+			{% if page.completed %}
+				<h6>Date Completed</h6>
+				<p>{{ page.completed }}</p>
+			{% endif %}
+		</aside>
+	</div>
+</main>

@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<main class="home">
+	<div class="container">
+		<section class="intro">
+			<h1>Hi there!</h1>
+			<p>I'm Dan, a Web Developer from Devon. I'm currently on a placement year at <a href="http://www.euautomation.com/uk/">European Automation</a> and studying Web Development at Staffs Uni.
+			<h2>Here's some of my work</h2>
+		</section>
+		<section class="projects">
+			{% for post in site.categories.portfolio limit:6 %}
+			<article class="item">
+				<a href="{{ post.url }}">
+					<img src="{{ post.thumbnail }}" alt="{{ post.title }}">
+					<p>View Project</p>
+				</a>
+			</article>
+			{% endfor %}
+		</section>
+		<h2>Here's some words</h2>
+		<section class="posts">
+			{% for post in site.categories.blog limit:3 %}
+			<article class="item">
+				<a href="{{ post.url }}"><img src="{{ post.thumbnail }}" alt="{{ post.title }}"></a>
+				<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+				{{ post.excerpt }}
+			</article>
+			{% endfor %}
+		</section>
+	</div>
+</main>

@@ -1,0 +1,85 @@
+.projects {
+	@include row;
+
+	.item {
+		@include span(6);
+
+		position: relative;
+		padding-bottom: 24px;
+
+		&:hover p {
+			opacity: 1;
+		}
+
+		p {
+			position: absolute;
+			opacity: 0;
+			top: 30%;
+			left: 50%;
+			width: 200px;
+			margin-left: -100px;
+			padding: 10px 30px;
+			background: rgba(209,88,88,0.9);
+			text-align: center;
+			line-height: normal;
+			color: #FFF;
+			transition: opacity 0.2s ease;
+		}
+	}
+}
+
+main.project {
+	@include clearfix;
+
+	article {
+		&.project-content {
+			float: left;
+			width: 64%;
+		}
+
+		h2.title {
+			margin-top: 0;
+			margin-bottom: 0.2em;
+			font-size: 1.25em;
+			color: $primary;
+		}
+		h1.title {
+			margin-bottom: 0;
+			font-size: 3em;
+		}
+		.skills {
+			margin-top: 0;
+			margin-bottom: 1em;
+			color: $muted;
+		}
+		.thumbnail {
+			display: block;
+		}
+		p:last-of-type:not(.skills) {
+			margin-bottom: 50px;
+		}
+		img:not(.thumbnail) {
+			padding-top: 20px;
+		}
+		.thumbnail + .launch {
+			margin-top: 50px;
+		}
+		.launch {
+			margin-bottom: 50px;
+			text-align: center;
+		}
+	}
+	aside {
+		float: right;
+		width: 24%;
+
+		h6 {
+			margin-bottom: 0.1em;
+			font-size: 0.75em;
+			color: $muted;
+		}
+		p {
+			margin-bottom: 1.2em;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.footer {
+	padding: 2em 0;
+	background: $footerbg;
+
+	a {
+		padding-right: 10px;
+		text-transform: uppercase;
+		color: $footertext;
+		transition: color 0.2s ease;
+
+		&:hover {
+			color: #FFF;
+		}
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+}
