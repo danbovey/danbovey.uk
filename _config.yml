@@ -8,12 +8,9 @@ twitter: danielbovey
 github:  danbovey
 
 # Outputting
-permalink: /:categories/:slug
+permalink: /:categories/:title
 highlighter: rouge
 excerpt_separator: <!--more-->
 
 # Build settings
 markdown: kramdown
-
-gems:
-  - jekyll-redirect-from
