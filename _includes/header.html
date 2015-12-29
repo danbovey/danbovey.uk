@@ -1,8 +1,7 @@
-{{ page.url }}
 <header class="header">
 	<div class="container">
 		<nav class="nav">
-			<a href="/"{% if page.url == '/' or page.url contains 'index' %} class="active"{% endif %}>Home</a>
+			<a href="/"{% if page.url == '/index.html' or page.url == '/' %} class="active"{% endif %}>Home</a>
 			<a href="/portfolio"{% if page.url contains 'portfolio' %} class="active"{% endif %}>Work</a>
 			<a href="/blog"{% if page.url contains 'blog' %} class="active"{% endif %}>Blog</a>
 		</nav>
