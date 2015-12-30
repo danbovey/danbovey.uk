@@ -5,17 +5,27 @@
 	color: #333;
 
 	.logo {
-		float: left;
 		margin: 0;
 		padding-top: 10px;
 		font-size: 1.5em;
+		text-align: center;
+
+		@include tablet {
+			float: left;
+			text-align: left;
+		}
 
 		a {
 			color: $primary;
 		}
 	}
 	.nav {
-		float: right;
+		text-align: center;
+
+		@include tablet {
+			float: right;
+			text-align: left;
+		}
 
 		a {
 			display: inline-block;

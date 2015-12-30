@@ -15,3 +15,8 @@ $grid-width: 800px;
 $grid-columns: 12;
 $grid-gutter: 2%;
 $grid-row-width: 100 + ($grid-gutter);
+
+$container-padding: 20px;
+
+$grid-tablet: 540px;
+$grid-desktop: $grid-width + ($container-padding * 2);

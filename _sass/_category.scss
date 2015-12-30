@@ -2,7 +2,26 @@
 	@include row;
 
 	.item {
-		@include span(4);
+		@include span(12);
+
+		@include tablet {
+			@include span(6);
+			
+			&:nth-child(2n+1) {
+				clear: left;
+			}
+		}
+
+		@include desktop {
+			@include span(4);
+
+			&:nth-child(2n+1) {
+				clear: none;
+			}
+			&:nth-child(3n+1) {
+				clear: left;
+			}
+		}
 
 		position: relative;
 		padding-bottom: 20px;
@@ -13,9 +32,5 @@ main.category {
 	h1.title {
 		margin-bottom: 2em;
 		text-align: center;
-	}
-
-	.item:nth-child(3n+1) {
-		clear: left;
 	}
 }

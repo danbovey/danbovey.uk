@@ -7,7 +7,7 @@ layout: default
 			<p data-height="{{ page.codepenHeight }}" data-theme-id="12992" data-slug-hash="{{ page.codepen }}" data-default-tab="result" data-user="danbovey" data-preview="true" class='codepen'>See the Pen <a href='http://codepen.io/danbovey/pen/{{ page.codepen }}/'>Animated City Map</a> by Dan Bovey (<a href='http://codepen.io/danbovey'>@danbovey</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 			<script src="//assets.codepen.io/assets/embed/ei.js"></script>
 		{% elsif page.image %}
-			<img src="{{ page.image }}" alt="{{ page.title }}">
+			<img src="{{ page.image }}" alt="{{ page.title }}" class="thumbnail">
 		{% endif %}
 		<h1 class="title">{{ page.title }}</h1>
 		{% if page.subtitle %}
