@@ -1,0 +1,32 @@
+---
+layout: default
+title: 404 Not Found
+---
+
+<main class="error">
+	<section class="error">
+		<div class="container">
+			<script>
+				var characters = 0;
+				var message = "HTTPS://danbovey.uk>LOAD (this).document(body);<br />This page does not exist.<br /><br />HTTPS://danbovey.uk>LOAD solutions.PHP;<br />/* Go to <a href='https://danbovey.uk'>HOMEPAGE.html</a><br />/* Search (this).document(WEBSITE) for the page you are looking for<br />/* In the event of catastophic failure, press CTRL + ALT + DELETE to restart your computer<br />/* The Internet will lose all unsaved data.<br />/* It may just be possible to continue normally.<br />"
+				var caption;
+
+				var typeMessage = function() {	
+					caption.innerHTML = message.substr(0, characters++);
+					if(characters < message.length + 1)
+						window.setTimeout(typeMessage, 20);
+					else {
+						characters = 0;
+						message = '';
+					}	
+				}
+				window.onload = function() {
+					caption = document.getElementById('caption');
+					typeMessage();
+				};
+			</script>
+			<h1>Error 404</h1>
+			<p id="caption"></p>
+		</div>
+	</section>
+</main>

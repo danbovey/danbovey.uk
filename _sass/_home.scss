@@ -2,7 +2,29 @@ main.home {
 	h2 {
 		margin-bottom: 20px;
 		padding: 20px 0;
-		border-top: 1px solid #EFEFEF;
-		border-bottom: 1px solid #EFEFEF;
+		// border-top: 1px solid #EFEFEF;
+		// border-bottom: 1px solid #EFEFEF;
+	}
+
+	.intro {
+		margin-bottom: 50px;
+	}
+
+	.blog {
+		@include row;
+
+		.item {
+			@include span(12);
+
+			margin-bottom: 40px;
+
+			h1 {
+				font-size: 2em;
+			}
+		}
+	}
+
+	.readmore {
+		margin-bottom: 50px;
 	}
 }

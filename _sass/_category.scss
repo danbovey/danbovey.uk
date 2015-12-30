@@ -1,5 +1,21 @@
+.items {
+	@include row;
+
+	.item {
+		@include span(4);
+
+		position: relative;
+		padding-bottom: 20px;
+	}
+}
+
 main.category {
 	h1.title {
+		margin-bottom: 2em;
 		text-align: center;
+	}
+
+	.item:nth-child(3n+1) {
+		clear: left;
 	}
 }

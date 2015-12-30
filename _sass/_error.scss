@@ -1,0 +1,22 @@
+main.error {
+	padding: 100px 0;
+	background: #00F;
+	font-family: 'Courier New', Courier, monospace;
+	text-align: left;
+
+	h1 {
+		display: inline-block;
+		margin-bottom: 20px;
+		padding: 0 20px;
+		background: #FFF;
+		font: bold 20px 'Courier New', Courier, monospace;
+		color: #00F;
+	}
+	p {
+		font-size: 20px;
+		color: #FFF;
+	}
+	a {
+		color: #59F0FF;
+	}
+}

@@ -6,6 +6,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://danbovey.uk" # the base hostname & protocol for your site
 twitter: danielbovey
 github:  danbovey
+youtube: danbovey
+soundcloud: danbovey
 
 # Outputting
 permalink: /:categories/:title

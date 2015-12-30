@@ -1,15 +1,7 @@
-.posts {
-	@include row;
-
-	.item {
-		@include span(4);
-
-		margin-bottom: 24px;
-
-		h1 a {
-			font-size: 1.2em;
-			color: inherit;
-		}
+.blog .item {
+	h1 a {
+		font-size: 1.2em;
+		color: #333;
 	}
 }
 
@@ -34,11 +26,5 @@ main.post {
 	}
 	.codepen.inline {
 		margin-top: 20px;
-	}
-}
-
-main.blog {
-	.item:nth-child(3n+1) {
-		clear: left;
 	}
 }

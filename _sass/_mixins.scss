@@ -21,7 +21,7 @@
 @mixin row {
 	@include clearfix;
 	
-	width: 104%;
+	width: $grid-row-width;
 	margin-left: (-$grid-gutter);
 }
 

@@ -1,21 +1,35 @@
 .header {
 	@include clearfix;
-	
+
+	padding: 20px 0;
+	color: #333;
+
+	.logo {
+		float: left;
+		margin: 0;
+		padding-top: 10px;
+		font-size: 1.5em;
+
+		a {
+			color: $primary;
+		}
+	}
 	.nav {
-		padding-bottom: 2.5em;
-		
+		float: right;
+
 		a {
 			display: inline-block;
-			margin-right: 10px;
-			padding-top: 5px;
-			border-top: 5px solid transparent;
+			padding: 15px 30px;
 			color: $muted;
+			transition: background 0.2s ease;
 
+			&:hover {
+				background: #FFF;
+			}
 			&:last-child {
-				margin-right: 0;
+				padding-right: 0;
 			}
 			&.active {
-				border-color: $primary;
 				color: $primary;
 			}
 		}
