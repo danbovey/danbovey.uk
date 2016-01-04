@@ -67,4 +67,4 @@ Resize the page to see the change!
 
 Yes. The idea behind having the <code>&lt;img&gt;</code> tag is that all browsers should theotically support the <code>&lt;picture&gt;</code> tag.
 
-[![caniuse.com](http://i.imgur.com/56hO93u.png)](http://caniuse.com/#feat=picture)
+[![caniuse.com](https://danbovey.uk/uploads/blog/using-the-picture-element-for-the-first-time/caniuse-table.png)](http://caniuse.com/#feat=picture)
