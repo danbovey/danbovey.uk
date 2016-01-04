@@ -2,7 +2,7 @@
 layout: post
 title: "Using the <code>&lt;picture&gt;</code> element for the first time"
 subtitle: "(With the help of Pokémon)"
-date: 2015-12-04 12:00:00 +0000
+date: 2016-01-04 18:00:00 +0000
 categories: blog
 image: "/uploads/blog/using-the-picture-element-for-the-first-time.jpg"
 thumbnail: "/uploads/blog/using-the-picture-element-for-the-first-time-thumb.jpg"
