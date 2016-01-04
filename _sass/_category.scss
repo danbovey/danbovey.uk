@@ -1,6 +1,8 @@
 .items {
 	@include row;
 
+	padding-bottom: 20px;
+
 	.item {
 		@include span(12);
 

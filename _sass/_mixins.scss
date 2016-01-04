@@ -42,5 +42,5 @@
 @mixin span($i) {
 	float: left;
 	width: ((100% / $grid-columns) * $i) - $grid-gutter;
-	margin: 0 0 0 $grid-gutter;
+	margin-left: $grid-gutter;
 }

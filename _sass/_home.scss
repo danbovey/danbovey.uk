@@ -1,13 +1,36 @@
 main.home {
+	padding-top: 0;
+
 	h2 {
 		margin-bottom: 20px;
 		padding: 20px 0;
-		// border-top: 1px solid #EFEFEF;
-		// border-bottom: 1px solid #EFEFEF;
 	}
 
 	.intro {
+		padding: 50px 0 80px;
+		text-align: center;
+
+		h1 {
+			font-size: 2.5em;
+		}
+		p {
+			font-size: 1.2em;
+			color: $muted;
+		}
+	}
+
+	.portfolio {
+		@include row;
+
 		margin-bottom: 50px;
+
+		.item {
+			margin-bottom: 10px;
+
+			@include tablet {
+				@include span(6);
+			}
+		}
 	}
 
 	.blog {
