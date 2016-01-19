@@ -119,4 +119,6 @@ It's easy to forget the site if you're visiting a scroll-heavy site on mobile, s
 
 <p data-height="500" data-theme-id="12992" data-slug-hash="bEYwZQ" data-default-tab="result" data-user="danbovey" class='codepen'>See the Pen <a href='http://codepen.io/danbovey/pen/bEYwZQ/'>Making the perfect header with position:sticky and headroom.js</a> by Dan Bovey (<a href='http://codepen.io/danbovey'>@danbovey</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 
-Go visit the full [project on CodePen](http://codepen.io/danbovey/pen/bEYwZQ) and give it some love!
+>Something to note is that I haven't done anything when you reach mobile and the nav starts stacking. Going down the route of the hamburger menu wouldn't be so perfect as it's so controversial. In the example you could stack the links but IRL there's going to be more than 5 navigation items.
+
+Go visit the full [project on CodePen](http://codepen.io/danbovey/pen/bEYwZQ) and give it some love/make a hamburger fork/make it even more perfect!
