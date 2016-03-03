@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Simplifying Gulp"
-date: 2016-03-03 20:00:00 +0000
+date: 2016-03-03 12:00:00 +0000
 categories: blog
 image: "/uploads/blog/simplifying-gulp.png"
 thumbnail: "/uploads/blog/simplifying-gulp-thumb.png"

@@ -13,7 +13,6 @@ soundcloud: danbovey
 permalink: /:categories/:title
 highlighter: pygments
 excerpt_separator: <!--more-->
-timezone: "Europe/London"
 
 # Build settings
 markdown: kramdown
