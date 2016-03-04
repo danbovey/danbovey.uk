@@ -11,7 +11,7 @@ soundcloud: danbovey
 
 # Outputting
 permalink: /:categories/:title
-highlighter: pygments
+highlighter: rouge
 excerpt_separator: <!--more-->
 
 # Build settings
