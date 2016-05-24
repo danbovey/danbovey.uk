@@ -3,8 +3,8 @@ layout: post
 title: "Simplifying Gulp"
 date: 2016-03-03 12:00:00 +0000
 categories: blog
-image: "/uploads/blog/simplifying-gulp.png"
-thumbnail: "/uploads/blog/simplifying-gulp-thumb.png"
+image: "/uploads/blog/simplifying-gulp.jpg"
+thumbnail: "/uploads/blog/simplifying-gulp-thumb.jpg"
 ---
 
 Gulp is the greatest thing to happen to building websites in a long time. But lately, it feels like all I've been doing as a web developer is building the build processes of my websites. So, obviously, I chose to build a thing which builds the build processes which builds a website.
