@@ -69,3 +69,13 @@ And that brings me to my current situation. Back to square one, at a very blank 
 Is this what it feels like to be on the cutting edge of web development? I'm not sure I want to be here.
 
 ![](http://i.imgur.com/upe6xt3.gif)
+
+## EDIT - Update
+
+With a little bit of help from [react-redux-universal-hot-example](https://github.com/erikras/react-redux-universal-hot-example) and a lot of help from the much simpler, [simple-redux-boilerplate](https://github.com/tsaiDavid/simple-redux-boilerplate) I was able to understand Redux reducers and get properly set up!
+
+Another massive, massive help was watching [Dan Abramov talk at React Europe [30:40]](https://www.youtube.com/watch?v=xsSnOQynTHs) about why he built Redux, and demo Hot Loading with React.
+
+I might start another blog post to explain everything I've done and possibly make a fork of the simple boilerplate, with a bit more functionality like routes, modals and SCSS.
+
+![](http://i.imgur.com/fwp9rGi.gif)
