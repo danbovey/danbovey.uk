@@ -37,6 +37,10 @@ main.project {
 		h1.title {
 			margin-bottom: 0;
 			font-size: 3em;
+
+			& + .thumbnail {
+				margin-top: 1em;
+			}
 		}
 		.skills {
 			margin-top: 0;
@@ -58,6 +62,10 @@ main.project {
 		.launch {
 			margin-bottom: 50px;
 			text-align: center;
+		}
+
+		.twitter-tweet {
+			width: 100% !important;
 		}
 	}
 	aside {
