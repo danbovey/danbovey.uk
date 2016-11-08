@@ -14,6 +14,9 @@ layout: default
 			<h2 class="subtitle">{{ page.subtitle }}</h2>
 		{% endif %}
 		<p class="meta">Posted on {{ page.date | date: "%-d %B %Y" }}</time>{% if page.author %} by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+		{% if page.tldr %}
+		<p class="meta tldr">TL;DR: {{ page.tldr }}</p>
+		{% endif %}
 		<article>
 			{{ content }}
 		</article>
@@ -21,3 +24,4 @@ layout: default
 </main>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

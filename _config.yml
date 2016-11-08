@@ -16,3 +16,6 @@ excerpt_separator: <!--more-->
 
 # Build settings
 markdown: kramdown
+
+# Serving
+port: 3000

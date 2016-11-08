@@ -59,5 +59,8 @@ main.post {
 }
 
 .twitter-tweet {
-	margin-bottom: 50px !important;
+	display: flex !important;
+	justify-content: center;
+	width: 100% !important;
+	margin: 20px 0 !important;
 }
