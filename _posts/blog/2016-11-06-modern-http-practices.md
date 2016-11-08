@@ -12,7 +12,7 @@ I put forth this vote to the developer community yesterday, which seems much mor
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Developer friends! Do you prefer to use/build API&#39;s with an envelope? i.e. { data: [], status: &#39;&#39;, error: &#39;&#39; } Please RT 💌</p>&mdash; Dan Bovey (@danielbovey) <a href="https://twitter.com/danielbovey/status/795675648496992256">November 7, 2016</a></blockquote>
 
-Don't worry, I knew what I was setting myself up for. The envelope is recommended in a [specification for creating JSON APIs](http://jsonapi.org/) which I was quickly linked to by a voter while writing this but there's also a percentage of others who actually believe in using HTTP properly. #shotsfired
+Don't worry, I knew what I was setting myself up for. I'm going against the (small sample of) people above, and what's recommended in a [specification for creating JSON APIs](http://jsonapi.org/) which I was quickly linked to by a voter while writing this but there's also a percentage of others who actually believe in using HTTP properly. #shotsfired
 
 I think my favourite web blog/tutorial of all time is Vinay Sahni's [Best Practices for Designing a Pragmatic RESTful API](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api). It's a truly non-biased guide to designing an API and it suggests not using the envelope you're all so clearly attached to!
 
