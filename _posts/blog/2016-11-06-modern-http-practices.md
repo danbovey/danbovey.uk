@@ -8,7 +8,7 @@ thumbnail: "/uploads/blog/modern-http-practices-thumb.jpg"
 tldr: "I made a pagination library for Laravel and Lumen that removes the envelope: <a href='https://github.com/danbovey/laravel-linkheader-paginator'>Laravel LinkHeader Paginator</a>"
 ---
 
-I put forth this vote to the developer community yesterday, which seems much more important than any other vote going on this week!<!-- more -->
+I put forth this vote to the developer community yesterday, which seems much more important than any other vote going on this week!<!--more-->
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Developer friends! Do you prefer to use/build API&#39;s with an envelope? i.e. { data: [], status: &#39;&#39;, error: &#39;&#39; } Please RT 💌</p>&mdash; Dan Bovey (@danielbovey) <a href="https://twitter.com/danielbovey/status/795675648496992256">November 7, 2016</a></blockquote>
 
