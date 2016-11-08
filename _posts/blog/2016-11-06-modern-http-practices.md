@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Modern HTTP Practices (Fuck the Envelope)"
-date: 2016-11-06 00:00:00 +0000
+date: 2016-11-08 00:00:00 +0000
 categories: blog
 image: "/uploads/blog/modern-http-practices.jpg"
 thumbnail: "/uploads/blog/modern-http-practices-thumb.jpg"
