@@ -1,21 +1,41 @@
-# Site settings
-title: Dan Bovey
-email: dan@danbovey.uk
-description: Web Developer / Designer / Geek
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://danbovey.uk" # the base hostname & protocol for your site
-twitter: danielbovey
-github:  danbovey
-youtube: danbovey
-soundcloud: danbovey
+layout: sidebar
+style: light
 
-# Outputting
-permalink: /:categories/:title
-highlighter: rouge
-excerpt_separator: <!--more-->
+plugins:
+  - jekyll-octicons
+  - jekyll-github-metadata
+  - jemoji
 
-# Build settings
-markdown: kramdown
+permalink: /:year/:month/:day/:title/
 
-# Serving
-port: 3000
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "work"
+    values:
+      layout: "post"
+
+collections:
+  designs:
+    output: false
+  work:
+    output: true
+    permalink: /work/:name
+
+projects:
+  sort_by: stars
+  limit: 9
+  exclude:
+    forks: true
+
+social_media:
+  dribbble: danbovey
+  linkedin: danbovey
+  stackoverflow: 1255333
+  twitter: danielbovey

@@ -1,34 +1,44 @@
 # danbovey.uk
-My personal site built with Jekyll, so that it can be hosted on GitHub Pages.
 
-## Install
+Forked from [github/personal-website](https://github.com/github/personal-website)!
 
-The Gemfile uses the [github-pages](https://github.com/github/pages-gem) gem so that the site always works on GitHub.
+## Installation
 
-#### Set up a dev server
+Jekyll is a [Ruby Gem](https://jekyllrb.com/docs/ruby-101/#gems) that can be installed on most systems.
 
+1. Install a full [Ruby development environment](https://jekyllrb.com/docs/installation/)
+2. Install Jekyll and [bundler](https://jekyllrb.com/docs/ruby-101/#bundler) [gems](https://jekyllrb.com/docs/ruby-101/#gems)
+```
+gem install jekyll bundler
+```
+3. Change into your new directory
+```
+cd personal-website
+```
+4. Install missing gems
 ```
 bundle install
 ```
-
-#### Start the dev server
-
+5. Build the site and make it available on a local server
 ```
-jekyll server
+bundle exec jekyll serve
 ```
 
-#### Health check
-
-Checks the GitHub Pages site for common DNS configuration issues.
+You should see something like:
 
 ```
-$ github-pages health-check
-Checking domain foo.invalid...
-Uh oh. Looks like something's fishy: A record points to deprecated IP address
+Configuration file: /octocat/personal-website/_config.yml
+            Source: /octocat/personal-website
+       Destination: /octocat/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+   GitHub Metadata: No GitHub API authentication could be found. Some fields may be missing or have incorrect data.
+                    done in 14.729 seconds.
+ Auto-regeneration: enabled for '/octocat/personal-website'
+    Server address: http://127.0.0.1:4000
+  Server running... press ctrl-c to stop.
 ```
 
-See the [GitHub Pages Health Check](https://github.com/github/pages-health-check) documentation for more information.
+Don't worry about the "No GitHub API authentication could be found" message. [API authentication is only necessary](https://github.com/jekyll/github-metadata/blob/master/docs/authentication.md) if you intend to display more detailed metadata, like a branch name.
 
-## Updating
-
-To update to the latest version of Jekyll and associated dependencies, simply run `gem update github-pages`.
+6. Now browse to [http://localhost:4000](http://localhost:4000)

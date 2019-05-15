@@ -1,0 +1,9 @@
+{% assign sorted = (site.work | sort: 'date') | reverse %}
+<h2 class="mb-4{% if site.style == 'dark' %} text-white{% endif %}">My Work</h2>
+<div class="d-sm-flex flex-wrap gutter-condensed mb-4">
+  {% for post in sorted limit: 6 %}
+    <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+      {% include work-card.html %}
+    </div>
+  {% endfor %}
+</div>
