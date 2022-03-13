@@ -21,6 +21,8 @@ const StravaStats = () => {
     })();
   }, []);
 
+  const hours = recentRides ? (recentRides.elapsed_time / 3600).toFixed(1) : '-';
+
   return (
     <Stat>
       <a
@@ -28,7 +30,7 @@ const StravaStats = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <StatMetric>{recentRides ? recentRides.elapsed_time : '-'}h</StatMetric>
+        <StatMetric>{hours}h</StatMetric>
         <small>Recent bike rides</small>
       </a>
     </Stat>

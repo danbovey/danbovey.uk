@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-import { Stat, StatMetric, StatPopover } from '../stat';
+import { Stat, StatMetric } from '../stat';
 
 const FitbitStats = () => {
   const [summary, setSummary] = useState(null);
-
-  const [isOpen, setOpen] = useState(false);
-
+  
   useEffect(() => {
     (async () => {
       let res;
@@ -24,18 +22,9 @@ const FitbitStats = () => {
   }, []);
 
   return (
-    <Stat onClick={() => setOpen(true)}>
+    <Stat>
       <StatMetric>{summary ? summary.steps : '-'}</StatMetric>
       <small>Steps today</small>
-      <StatPopover
-        isOpen={isOpen}
-        onClick={e => {
-          e.stopPropagation();
-          setOpen(false);
-        }}
-      >
-        Tracked live from my Fitbit
-      </StatPopover>
     </Stat>
   );
 };
