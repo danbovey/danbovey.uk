@@ -23,12 +23,18 @@ const GoodreadsStats = () => {
 
   return (
     <Stat>
-      <StatMetric>
-        {readingChallenge
-          ? `${readingChallenge.read}/${readingChallenge.goal}`
-          : '-/-'}
-      </StatMetric>
-      <small>Books read in {new Date().getFullYear()}</small>
+      <a
+        href="https://www.goodreads.com/user_challenges/41277883"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <StatMetric>
+          {readingChallenge
+            ? `${readingChallenge.read}/${readingChallenge.goal}`
+            : '-/-'}
+        </StatMetric>
+        <small>Books read in {new Date().getFullYear()}</small>
+      </a>
     </Stat>
   );
 };
