@@ -23,7 +23,9 @@ const GoodreadsStats = () => {
     })();
   }, []);
 
-  const currentYearChallenge = `https://www.goodreads.com/user_challenges/${readingChallenge?.challengeId}`;
+  const currentYearChallenge = readingChallenge?.challengeId
+    ? `https://www.goodreads.com/user_challenges/${readingChallenge.challengeId}`
+    : null;
 
   return (
     <Stat>
