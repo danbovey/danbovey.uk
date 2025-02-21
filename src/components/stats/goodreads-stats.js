@@ -3,6 +3,8 @@ import axios from 'axios';
 
 import { Stat, StatMetric } from '../stat';
 
+const goodreadsProfile = 'https://www.goodreads.com/user/show/117994749';
+
 const GoodreadsStats = () => {
   const [readingChallenge, setReadingChallenge] = useState(null);
 
@@ -21,10 +23,14 @@ const GoodreadsStats = () => {
     })();
   }, []);
 
+  const currentYearChallenge = readingChallenge?.challengeId
+    ? `https://www.goodreads.com/user_challenges/${readingChallenge.challengeId}`
+    : null;
+
   return (
     <Stat>
       <a
-        href="https://www.goodreads.com/user_challenges/41277883"
+        href={currentYearChallenge || goodreadsProfile}
         target="_blank"
         rel="noreferrer"
       >
