@@ -1,0 +1,26 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 693' width='320' height='693'>
+  <rect width='320' height='693' rx='44' fill='#1c1e1e'/>
+  
+  <text x='22' y='42' fill='#f4f5f3' font-family='ui-monospace, monospace' font-size='15' font-weight='700'>9:41</text>
+  <g fill='#f4f5f3'>
+    <rect x='244' y='32' width='16' height='11' rx='2'/>
+    <rect x='266' y='30' width='14' height='13' rx='2'/>
+    <rect x='286' y='28' width='22' height='15' rx='3'/>
+  </g>
+  
+  <text x='22' y='98' fill='#00e676' font-family='ui-monospace, monospace' font-size='15' letter-spacing='2' font-weight='700'>ON AIR</text>
+  <text x='21' y='140' fill='#f4f5f3' font-family='ui-monospace, monospace' font-size='34' font-weight='700' letter-spacing='-1'>Obscura</text>
+  
+  <rect x='20' y='168' width='280' height='200' rx='20' fill='#26292b'/>
+  <rect x='44' y='190' width='156' height='156' rx='14' fill='#2f3335'/>
+  <circle cx='122' cy='268' r='30' fill='#1c1e1e'/>
+  <circle cx='122' cy='268' r='8' fill='#00e676'/>
+  <text x='216' y='232' fill='#f4f5f3' font-family='ui-monospace, monospace' font-size='17' font-weight='700'>Track 01</text>
+  <text x='216' y='258' fill='#8b918d' font-family='ui-monospace, monospace' font-size='13'>4:32</text>
+  <g><rect x='26' y='418' width='5' height='43' rx='2.5' fill='#00e676'/><rect x='36' y='409' width='5' height='62' rx='2.5' fill='#00e676'/><rect x='46' y='420' width='5' height='40' rx='2.5' fill='#00e676'/><rect x='56' y='429' width='5' height='23' rx='2.5' fill='#00e676'/><rect x='66' y='411' width='5' height='58' rx='2.5' fill='#00e676'/><rect x='76' y='412' width='5' height='55' rx='2.5' fill='#00e676'/><rect x='86' y='432' width='5' height='17' rx='2.5' fill='#00e676'/><rect x='96' y='418' width='5' height='44' rx='2.5' fill='#00e676'/><rect x='106' y='409' width='5' height='62' rx='2.5' fill='#00e676'/><rect x='116' y='421' width='5' height='39' rx='2.5' fill='#00e676'/><rect x='126' y='428' width='5' height='24' rx='2.5' fill='#00e676'/><rect x='136' y='411' width='5' height='58' rx='2.5' fill='#00e676'/><rect x='146' y='413' width='5' height='55' rx='2.5' fill='#00e676'/><rect x='156' y='432' width='5' height='16' rx='2.5' fill='#00e676'/><rect x='166' y='418' width='5' height='45' rx='2.5' fill='#00e676'/><rect x='176' y='409' width='5' height='62' rx='2.5' fill='#00e676'/><rect x='186' y='421' width='5' height='38' rx='2.5' fill='#3a3f41'/><rect x='196' y='428' width='5' height='24' rx='2.5' fill='#3a3f41'/><rect x='206' y='411' width='5' height='59' rx='2.5' fill='#3a3f41'/><rect x='216' y='413' width='5' height='54' rx='2.5' fill='#3a3f41'/><rect x='226' y='432' width='5' height='15' rx='2.5' fill='#3a3f41'/><rect x='236' y='417' width='5' height='45' rx='2.5' fill='#3a3f41'/><rect x='246' y='409' width='5' height='62' rx='2.5' fill='#3a3f41'/><rect x='256' y='421' width='5' height='37' rx='2.5' fill='#3a3f41'/><rect x='266' y='427' width='5' height='25' rx='2.5' fill='#3a3f41'/><rect x='276' y='411' width='5' height='59' rx='2.5' fill='#3a3f41'/><rect x='286' y='413' width='5' height='54' rx='2.5' fill='#3a3f41'/><rect x='296' y='433' width='5' height='14' rx='2.5' fill='#3a3f41'/></g>
+  <circle cx='160' cy='540' r='34' fill='#00e676'/>
+  <rect x='152' y='525' width='6' height='30' rx='2' fill='#1c1e1e'/>
+  <rect x='164' y='525' width='6' height='30' rx='2' fill='#1c1e1e'/>
+  <circle cx='72' cy='540' r='6' fill='#8b918d'/>
+  <circle cx='248' cy='540' r='6' fill='#8b918d'/>
+</svg>

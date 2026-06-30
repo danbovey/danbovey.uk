@@ -2,13 +2,11 @@ import Link from 'next/link';
 
 import Header from '@/components/header';
 import Footer from '@/components/footer';
-import LiveStatus from '@/components/live-status';
+import DeviceShowcase from '@/components/device-showcase';
 import CantWaitStats from '@/components/stats/cant-wait';
 import SpotifyPlaylists from '@/components/stats/spotify-playlists';
 import StatsLedger from '@/components/stats/stats-ledger';
 import { getAllWork } from '@/lib/work';
-
-const stack = 'React · TypeScript · Node.js · Go · Python · C# · PHP';
 
 // Polycorp — the after-hours studio. Real products, in document order.
 const polycorp = [
@@ -43,25 +41,38 @@ export default function Home() {
       <main>
         {/* — Hero — */}
         <section className="ruled mx-auto max-w-[1180px] px-5 pb-16 pt-16 sm:px-8 sm:pb-24 sm:pt-24">
-          <div className="reveal">
-            <p className="path mb-6">dan-bovey</p>
-            <h1 className="t-hero">Dan Bovey</h1>
-            <p className="lede mt-7 max-w-[48ch]">
-              Senior Software Engineer. At{' '}
-              <a href="https://oaknorth.com" rel="noopener" className="link">
-                OakNorth
-              </a>{' '}
-              by day; after hours, building products at{' '}
-              <a href="https://polycorp.ltd" rel="noopener" className="link">
-                Polycorp
-              </a>{' '}
-              and making music as Can’t Wait.
-            </p>
-            <div className="mt-10 flex flex-col gap-x-6 gap-y-4 border-t border-rule pt-6 sm:flex-row sm:items-center sm:justify-between">
-              <LiveStatus />
-              <span className="meta normal-case tracking-normal text-text-3">
-                {stack}
-              </span>
+          <div className="grid items-center gap-x-8 gap-y-14 lg:grid-cols-12">
+            <div className="reveal lg:col-span-6">
+              <h1 className="t-hero">Dan Bovey</h1>
+              <p className="lede mt-7 max-w-[46ch]">
+                Senior Software Engineer at{' '}
+                <a href="https://oaknorth.com" rel="noopener" className="link">
+                  OakNorth
+                </a>{' '}
+                by day. After hours: building products at{' '}
+                <a href="https://polycorp.ltd" rel="noopener" className="link">
+                  Polycorp
+                </a>
+                , making music and hosting radio as{' '}
+                <a
+                  href="https://soundcloud.com/cantwait"
+                  rel="noopener"
+                  className="link"
+                >
+                  Can’t Wait
+                </a>
+                .
+              </p>
+              <div className="mt-10 border-t border-rule pt-6">
+                <p className="max-w-[40ch] text-text-2">
+                  All-in on frontend web &amp; React Native, AI-native
+                  engineering and product design.
+                </p>
+              </div>
+            </div>
+
+            <div className="reveal lg:col-span-6" style={{ ['--reveal-delay' as string]: '160ms' }}>
+              <DeviceShowcase />
             </div>
           </div>
         </section>
@@ -133,7 +144,7 @@ export default function Home() {
                   Polycorp<span className="text-accent">.</span>
                 </h2>
                 <p className="mt-6 text-lg leading-snug text-text">
-                  An after-hours product studio. Mine.
+                  My after-hours product studio.
                 </p>
                 <p className="lede mt-5">
                   No board deck, no growth theatre — just careful products built

@@ -35,10 +35,6 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-
-        <p className="annot meta mt-10 border-t border-rule pt-6 normal-case tracking-normal">
-          Built after hours. No Gatsby, no tracking — just static files.
-        </p>
       </div>
     </footer>
   );

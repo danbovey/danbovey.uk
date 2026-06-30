@@ -278,6 +278,51 @@ a {
   }
 }
 
+/* — Device showcase (hero) — fanned phones, parallax tilt — */
+.device-stage {
+  perspective: 1400px;
+}
+.phone {
+  position: relative;
+  width: 188px;
+  padding: 6px;
+  border-radius: 2rem;
+  background: #0b0c0c;
+  box-shadow:
+    inset 0 0 0 1.5px rgb(255 255 255 / 0.08),
+    0 30px 55px -18px rgb(0 0 0 / 0.75);
+}
+@media (min-width: 640px) {
+  .phone {
+    width: 205px;
+  }
+}
+.phone--front {
+  box-shadow:
+    inset 0 0 0 1.5px rgb(3 169 143 / 0.35),
+    0 0 0 1px rgb(3 169 143 / 0.18),
+    0 36px 70px -20px rgb(0 0 0 / 0.8),
+    var(--glow-accent);
+}
+.phone__screen {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1.55rem;
+  background: var(--color-ink);
+}
+.phone__notch {
+  position: absolute;
+  top: 13px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64px;
+  height: 16px;
+  border-radius: 999px;
+  background: #0b0c0c;
+  z-index: 2;
+}
+
 /* — Work article (markdown body) — */
 .article {
   color: var(--color-text-2);
