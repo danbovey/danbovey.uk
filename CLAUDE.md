@@ -1,7 +1,7 @@
 # CLAUDE.md
 
 Guidance for AI coding agents working on **danbovey.uk** — Dan Bovey's personal
-site. Static Next.js (App Router), deployed to GitHub Pages. Routes: `/`,
+site. Static Next.js (App Router), deployed by Cloudflare Pages. Routes: `/`,
 `/work`, `/work/[slug]`, plus a `not-found` page.
 
 ## Stack & commands
@@ -49,6 +49,6 @@ site; the 2026 rebuild keeps the identity and changes only the stack.
 
 ## Deploy
 
-`.github/workflows/deploy.yml` builds the export and publishes to GitHub Pages
-(the `github-pages` environment) on every push to `main`. Custom apex domain via
-`public/CNAME` (`danbovey.uk`) — keep it; losing it breaks the domain.
+**Cloudflare Pages** builds from the `main` branch (build command `pnpm build`,
+output `out`) and serves the apex domain `danbovey.uk`. Deploy settings and the
+custom domain live in the Cloudflare dashboard, not in this repo.
