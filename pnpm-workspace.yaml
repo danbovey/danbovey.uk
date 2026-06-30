@@ -1,0 +1,7 @@
+# pnpm 11 reads these settings here (not .npmrc). The pre-run install check
+# treats eslint's optional native dep (unrs-resolver) as a hard error, so
+# acknowledge it (we don't need that binary for the static build) and skip
+# the pre-run verification.
+verifyDepsBeforeRun: false
+allowBuilds:
+  unrs-resolver: false

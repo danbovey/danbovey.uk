@@ -1,7 +1,34 @@
 # danbovey.uk
 
-> 📈 My personal site built with Gatsby
+> 📟 My personal site — a static Next.js logbook. No Gatsby.
 
-My stats are loaded dynamically from CloudFlare workers.
+Dark terminal aesthetic: Iosevka throughout, teal `#03A98F` on near-black
+`#1C1E1E`, file-path wayfinding (`/work`, `/after-hours`, `/music`, `/stats`)
+and big live stat metrics.
 
-There is an issue with the Spotify playlists feature: Workers have a connection limit of 50 and I neeed to load the follower count for each of my playlists which is causing the function to abort. Instead, I am storing my top spotify playlists in [npoint.io](https://npoint.io) (A JSON storage API) at the moment.
+## Stack
+
+- **Next.js 14** (App Router) with `output: 'export'` → static files in `out/`.
+- **Tailwind 3** mapped to design tokens in `src/app/globals.css` (portable
+  copy in `tokens.css`).
+- **Iosevka** self-hosted via `next/font/local` (`src/fonts/*.woff2`).
+- **pnpm**. `pnpm dev` / `pnpm build`. For a quick check: `pnpm exec tsc --noEmit`.
+
+## Content
+
+- **Work history** lives as Markdown in `content/work/*.md` (date-prefixed
+  filenames drive ordering and the URL slug). Rendered at build time with
+  `gray-matter` + `marked`.
+- **CV** PDF is served from `public/Dan-Bovey-CV.pdf`.
+- **Live stats** (Fitbit steps, Strava, Goodreads, Trakt, Can't Wait mixes)
+  are fetched client-side from `stats-server.danbovey.workers.dev`. They show a
+  `–` placeholder until loaded and degrade gracefully if the worker is down.
+- **Spotify playlists** are read from an [npoint.io](https://npoint.io) JSON
+  blob — Workers' 50-connection limit made loading per-playlist follower counts
+  unreliable, so the top playlists are cached there.
+
+## Deploy
+
+Pushing to `main` runs `.github/workflows/deploy.yml`, which builds the static
+export and publishes it to GitHub Pages (the `github-pages` environment) on the
+apex domain `danbovey.uk` (see `public/CNAME`).

@@ -1,0 +1,41 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 693' width='320' height='693'>
+  <rect width='320' height='693' rx='44' fill='#1c1e1e'/>
+  
+  <text x='22' y='42' fill='#f4f5f3' font-family='ui-monospace, monospace' font-size='15' font-weight='700'>9:41</text>
+  <g fill='#f4f5f3'>
+    <rect x='244' y='32' width='16' height='11' rx='2'/>
+    <rect x='266' y='30' width='14' height='13' rx='2'/>
+    <rect x='286' y='28' width='22' height='15' rx='3'/>
+  </g>
+  
+  <text x='22' y='98' fill='#f64c00' font-family='ui-monospace, monospace' font-size='15' letter-spacing='2' font-weight='700'>HOME CLOUD</text>
+  <text x='21' y='140' fill='#f4f5f3' font-family='ui-monospace, monospace' font-size='34' font-weight='700' letter-spacing='-1'>Arq</text>
+  
+  <rect x='20' y='168' width='280' height='200' rx='20' fill='#26292b'/>
+  <circle cx='160' cy='250' r='70' fill='none' stroke='#3a3f41' stroke-width='14'/>
+  <circle cx='160' cy='250' r='70' fill='none' stroke='#f64c00' stroke-width='14' stroke-linecap='round'
+    stroke-dasharray='273 440' transform='rotate(-90 160 250)'/>
+  <text x='160' y='248' fill='#f4f5f3' font-family='ui-monospace, monospace' font-size='26' font-weight='700' text-anchor='middle'>2.4TB</text>
+  <text x='160' y='272' fill='#8b918d' font-family='ui-monospace, monospace' font-size='12' text-anchor='middle'>of 4TB used</text>
+  
+    <rect x='20' y='390' width='280' height='46' rx='12' fill='#26292b'/>
+    <circle cx='44' cy='413' r='12' fill='#f64c00'/>
+    <rect x='66' y='404' width='120' height='8' rx='4' fill='#8b918d'/>
+    <rect x='66' y='418' width='70' height='6' rx='3' fill='#5c625e'/>
+    <rect x='250' y='408' width='34' height='10' rx='5' fill='#f64c00'/>
+    <rect x='20' y='448' width='280' height='46' rx='12' fill='#26292b'/>
+    <circle cx='44' cy='471' r='12' fill='#2f3335'/>
+    <rect x='66' y='462' width='108' height='8' rx='4' fill='#8b918d'/>
+    <rect x='66' y='476' width='78' height='6' rx='3' fill='#5c625e'/>
+    <rect x='250' y='466' width='34' height='10' rx='5' fill='#3a3f41'/>
+    <rect x='20' y='506' width='280' height='46' rx='12' fill='#26292b'/>
+    <circle cx='44' cy='529' r='12' fill='#2f3335'/>
+    <rect x='66' y='520' width='96' height='8' rx='4' fill='#8b918d'/>
+    <rect x='66' y='534' width='86' height='6' rx='3' fill='#5c625e'/>
+    <rect x='250' y='524' width='34' height='10' rx='5' fill='#3a3f41'/>
+    <rect x='20' y='564' width='280' height='46' rx='12' fill='#26292b'/>
+    <circle cx='44' cy='587' r='12' fill='#2f3335'/>
+    <rect x='66' y='578' width='84' height='8' rx='4' fill='#8b918d'/>
+    <rect x='66' y='592' width='94' height='6' rx='3' fill='#5c625e'/>
+    <rect x='250' y='582' width='34' height='10' rx='5' fill='#3a3f41'/>
+</svg>
