@@ -29,6 +29,6 @@ and big live stat metrics.
 
 ## Deploy
 
-Pushing to `main` runs `.github/workflows/deploy.yml`, which builds the static
-export and publishes it to GitHub Pages (the `github-pages` environment) on the
-apex domain `danbovey.uk` (see `public/CNAME`).
+Deployed by **Cloudflare Pages** from the `main` branch. Build command
+`pnpm build`, build output directory `out`. The custom domain `danbovey.uk` is
+configured in the Cloudflare Pages dashboard.

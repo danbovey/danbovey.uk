@@ -7,12 +7,11 @@
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
 const nextConfig = {
-  // Static export -> `out/`. Deployed to GitHub Pages (apex danbovey.uk) by
-  // the Pages workflow on every push to main.
+  // Static export -> `out/`. Built and served by Cloudflare Pages from `main`.
   output: 'export',
   // No image optimizer at runtime for a static export.
   images: { unoptimized: true },
-  // Emit /work/ -> /work/index.html so Pages serves clean directory URLs.
+  // Emit /work/ -> /work/index.html for clean directory URLs.
   trailingSlash: true,
   ...(basePath ? { basePath, assetPrefix: basePath } : {})
 };
