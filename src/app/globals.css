@@ -1,0 +1,328 @@
+/* danbovey.uk · terminal logbook · dark + teal · Iosevka throughout
+ * Tokens mirror the portable tokens.css. --font-iosevka comes from
+ * next/font/local on <html>. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+
+  /* — Colour — */
+  --color-ink: #1c1e1e;
+  --color-surface: #25282a;
+  --color-surface-2: #2d3133;
+  --color-text: #f4f5f3;
+  --color-text-2: #a7aeaa;
+  --color-text-3: #717873;
+  --color-rule: rgb(255 255 255 / 0.1);
+  --color-rule-strong: rgb(255 255 255 / 0.18);
+  --color-accent: #03a98f;
+  --color-accent-soft: #4fd1bd;
+
+  /* — Type — */
+  --text-hero: clamp(2.6rem, 1rem + 6.4vw, 5.5rem);
+  --text-statement: clamp(2rem, 1rem + 4vw, 3.6rem);
+  --text-section: clamp(1.4rem, 1.05rem + 1.5vw, 2.1rem);
+  --text-metric: clamp(2.4rem, 1.4rem + 3.4vw, 4rem);
+  --text-label: 0.74rem;
+
+  /* — Motion — */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-short: 140ms;
+  --dur-mid: 320ms;
+
+  /* — Hairline / radius — */
+  --rule-hair: 1px solid var(--color-rule);
+  --radius-sm: 2px;
+  --glow-accent: 0 0 10px rgb(3 169 143 / 0.35), 0 0 36px rgb(3 169 143 / 0.14);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: clip;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-text);
+  font-family: var(--font-iosevka), ui-monospace, monospace;
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* — Mono micro-labels: file-paths, meta, status. The brand's terminal voice. — */
+.meta {
+  font-family: var(--font-iosevka), ui-monospace, monospace;
+  font-size: var(--text-label);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-3);
+}
+
+.meta--accent {
+  color: var(--color-accent-soft);
+}
+
+/* — File-path label — the signature /work · /music wayfinding — */
+.path {
+  font-family: var(--font-iosevka), ui-monospace, monospace;
+  font-size: var(--text-label);
+  letter-spacing: 0.04em;
+  color: var(--color-text-2);
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.1em;
+}
+.path::before {
+  content: '/';
+  color: var(--color-accent);
+}
+
+/* — Display type — */
+.t-hero {
+  font-weight: 700;
+  font-size: var(--text-hero);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+.t-statement {
+  font-weight: 700;
+  font-size: var(--text-statement);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  overflow-wrap: anywhere;
+}
+.t-section {
+  font-weight: 700;
+  font-size: var(--text-section);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.lede {
+  font-size: clamp(1.05rem, 0.97rem + 0.4vw, 1.3rem);
+  line-height: 1.55;
+  color: var(--color-text-2);
+  max-width: 42ch;
+}
+
+/* — Quiet inline link: accent underline that thickens on hover — */
+.link {
+  position: relative;
+  color: var(--color-accent-soft);
+  box-shadow: inset 0 -1px 0 var(--color-accent);
+  transition: box-shadow var(--dur-short) var(--ease-out),
+    color var(--dur-short) var(--ease-out);
+}
+.link:hover,
+.link:focus-visible {
+  box-shadow: inset 0 -2px 0 var(--color-accent-soft);
+  color: var(--color-text);
+}
+
+/* — Nav / index links (mono) — */
+.navlink {
+  font-family: var(--font-iosevka), ui-monospace, monospace;
+  font-size: var(--text-label);
+  letter-spacing: 0.02em;
+  color: var(--color-text-2);
+  white-space: nowrap;
+  transition: color var(--dur-short) var(--ease-out);
+}
+.navlink:hover,
+.navlink:focus-visible {
+  color: var(--color-text);
+}
+.navlink__slash {
+  color: var(--color-accent);
+}
+
+/* — Stat metric — the leaned-in centrepiece. Big teal tabular figure. — */
+.metric {
+  font-weight: 700;
+  font-size: var(--text-metric);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--color-accent);
+  font-variant-numeric: tabular-nums;
+}
+.metric--soft {
+  color: var(--color-accent-soft);
+}
+
+/* — Ledger / spec rows (hairline, no cards) — */
+.row {
+  border-top: var(--rule-hair);
+  transition: background-color var(--dur-short) var(--ease-out);
+}
+.row:hover {
+  background: var(--color-surface);
+}
+
+/* — Vertical dotted container rule — preserved from the original site — */
+.ruled {
+  position: relative;
+}
+@media (min-width: 940px) {
+  .ruled::before,
+  .ruled::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--color-rule) 50%
+    );
+    background-size: 100% 20px;
+  }
+  .ruled::before {
+    left: 0;
+  }
+  .ruled::after {
+    right: -1px;
+  }
+}
+
+/* — Live status dot — */
+.status-dot {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: var(--color-accent);
+  flex: none;
+}
+.status-dot[data-on='false'] {
+  background: var(--color-text-3);
+  animation: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .status-dot {
+    animation: pulse 2.4s var(--ease-in-out) infinite;
+  }
+}
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.35;
+    transform: scale(0.78);
+  }
+}
+
+.live {
+  font-family: var(--font-iosevka), ui-monospace, monospace;
+  font-size: var(--text-label);
+  letter-spacing: 0.04em;
+  color: var(--color-text-2);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+/* — Orchestrated entrance on load — */
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: reveal 0.7s var(--ease-out) forwards;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+@keyframes reveal {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* — Work article (markdown body) — */
+.article {
+  color: var(--color-text-2);
+}
+.article h2 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+  margin: 2.4rem 0 0.8rem;
+}
+.article p {
+  margin-bottom: 1.1rem;
+  max-width: 68ch;
+}
+.article a {
+  color: var(--color-accent-soft);
+  box-shadow: inset 0 -1px 0 var(--color-accent);
+}
+.article a:hover {
+  color: var(--color-text);
+}
+.article img,
+.article video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem 0;
+  border: var(--rule-hair);
+  border-radius: var(--radius-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

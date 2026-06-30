@@ -1,0 +1,36 @@
+/* danbovey.uk · design tokens (portable export)
+ * genre: terminal · theme: dark logbook (signature near-black #1C1E1E + teal #03A98F)
+ * type: Iosevka throughout (mono is the brand) — injected by next/font as --font-iosevka.
+ * The live copy of these tokens lives in src/app/globals.css :root.
+ */
+:root {
+  /* — Colour — anchored on the brand background #1C1E1E and teal #03A98F — */
+  --color-ink: #1c1e1e; /* page — signature green-black */
+  --color-surface: #25282a; /* raised panel / hover floor */
+  --color-surface-2: #2d3133; /* hover */
+  --color-text: #f4f5f3; /* near-white */
+  --color-text-2: #a7aeaa; /* muted body / labels */
+  --color-text-3: #717873; /* marginalia / dim */
+  --color-rule: rgb(255 255 255 / 0.1); /* hairline (matches old container rule) */
+  --color-rule-strong: rgb(255 255 255 / 0.18);
+  --color-accent: #03a98f; /* signature teal */
+  --color-accent-soft: #4fd1bd; /* lifted teal — hover / glow */
+
+  /* — Type scale (mono runs tight) — */
+  --text-hero: clamp(2.6rem, 1rem + 6.4vw, 5.5rem);
+  --text-statement: clamp(2rem, 1rem + 4vw, 3.6rem);
+  --text-section: clamp(1.4rem, 1.05rem + 1.5vw, 2.1rem);
+  --text-metric: clamp(2.4rem, 1.4rem + 3.4vw, 4rem);
+  --text-label: 0.74rem; /* mono micro-labels: paths, meta, status */
+
+  /* — Motion — */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-short: 140ms;
+  --dur-mid: 320ms;
+
+  /* — Hairline / radius — */
+  --rule-hair: 1px solid var(--color-rule);
+  --radius-sm: 2px;
+  --glow-accent: 0 0 10px rgb(3 169 143 / 0.35), 0 0 36px rgb(3 169 143 / 0.14);
+}
